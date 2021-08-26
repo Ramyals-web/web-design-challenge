@@ -2,38 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
   <title>Landing Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Header -->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#" style="background-color: rgb(177, 218, 182);">LATITUDE </font></a>
+        
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Latitude </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PLOTS
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/Users/krengasa/Documents/BootCamp/HomeWork/web-design-challenge/Web visualization/Resources/assets/images/Fig1.png">Max Temperature</a>
-                            <a class="dropdown-item" href="/Users/krengasa/Documents/BootCamp/HomeWork/web-design-challenge/Web visualization/Resources/assets/images/Fig2.png">Humidity</a>
-                            <a class="dropdown-item" href="/Users/krengasa/Documents/BootCamp/HomeWork/web-design-challenge/Web visualization/Resources/assets/images/Fig3.png">Cloudiness</a>
-                            <a class="dropdown-item" href="/Users/krengasa/Documents/BootCamp/HomeWork/web-design-challenge/Web visualization/Resources/assets/images/Fig4.png">Wind Speed</a>
-                        </div>
+                            <a class="dropdown-item" href="temprature.html">Max Temprature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                          </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="WebVisualizations/comparison.html">COMPARISON</a>
+                        <a class="nav-link" href="comparison.html">Comparison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="WebVisualizations/data.html">DATA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/amagsino/Web-Design-Challenge">REPO</a>
+                        <a class="nav-link" href="data.html">Data</a>
                     </li>
                 </ul>
             </div>
@@ -42,28 +41,71 @@
         <!-- Row 1 -->
         <div class="row">
           <div class="col-md-12">
-            <h1>Latitude</h1>
-            <h2> Summary: Latitute Vs. X</h2>
+            <h1> Summary: Latitute Vs. X</h1>
           </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-7 col-md-12">
-            <div class="box" style="padding-bottom: 20px;">
-                <img src="Resources/assets/images/Fig1.png" height = 400px width = 600px class="vizualization rounded float-left" alt="Max Temperature Graph">
-                    <p> The purpose of this project was to analyze how weather across 500+ cities across the world
-                        changes as you get closer to the equator. To accomplish this analysis, OpenWeatherMap API was
-                        utilized to assemble the dataset to create a representative model of weather across world cities.</p>
+        <div class="col-md-7">
+            <div class = "card-body"></div>
+                <div class="box" style="padding-bottom: 20px;">
+                <img src="Resources/assets/images/Fig1.png" height = 400px width = 600px  alt="Max Temperature Graph">
+                    <p> &emsp;&emsp;The purpose of this project was to analyze how weather across 500+ cities across the world changes as you get closer to the equator. To accomplish this analysis, OpenWeatherMap API was utilized to assemble the dataset to create a representative model of weather across world cities.</p>
                         <br>
-                    <p> Matplotlib was used to build a series of plots to showcase the relationships regarding several variables
+                    <p> &emsp;&emsp;Matplotlib was used to build a series of plots to showcase the relationships regarding several variables
                         of weather vs. latitude. Relationships analyzed included: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude,
-                         Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude.</p>
+                        Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude.</p>
                          <br>
-                    <p> Data and visualizations are are provided as part of the analysis, including explanations and descriptions
+                    <p> &emsp;&emsp;Data and visualizations are are provided as part of the analysis, including explanations and descriptions
                         of trends and correlations.</p>
             </div>
          </div>
     </div>
+    <div class="col-md-5">
+        <div class="card">
+          <div class="card-body">
+            <div class ="row">
+              <div class="col-sm-12">
+                <h3>Visualizations</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="temprature.html">
+
+                  <img src="Resources/assets/images/Fig1.png" height = 200px width = 200px alt='Temprature'>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="humidity.html">
+                    <img src="Resources/assets/images/Fig2.png" height = 200px width = 200x alt='Humidity'>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="cloudiness.html">
+
+                    <img src="Resources/assets/images/Fig3.png" height = 200px width = 200px alt='Cloudiness'>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="windspeed.html">
+                  
+                    <img src="Resources/assets/images/Fig4.png" height = 200px width = 200px alt='Wind Speed'>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    
 </body>
 </html>
