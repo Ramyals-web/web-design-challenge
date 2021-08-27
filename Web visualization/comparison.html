@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     
-  <title>Landing Page</title>
+  <title>Comparison</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,10 +22,10 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="Visualize-temp.html">Max Temprature</a>
-                          <a class="dropdown-item" href="Visualize-humidity.html">Humidity</a>
-                          <a class="dropdown-item" href="Visualize-cloud.html">Cloudiness</a>
-                          <a class="dropdown-item" href="Visualize-ws.html">Wind Speed</a>
+                            <a class="dropdown-item" href="Visualize-temp.html">Max Temprature</a>
+                            <a class="dropdown-item" href="Visualize-humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Visualize-cloud.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Visualize-ws.html">Wind Speed</a>
                           </div>
                     </li>
                     <li class="nav-item">
@@ -49,18 +49,13 @@
                     <table>
                         <tr>
                           <th>&nbsp;</th>
-                          <th>Summary: Latitute Vs. X</th>
+                          <th><h3>Comparison: Latitude Vs. X</h3></th>
                           
                         </tr>
                         <tr>
                           <td>&nbsp;</td>
-                          <td><table>
-                            <tr>
-                              <td><img src="Resources/assets/images/Fig1.png" height = 400px width = 600px  alt="Max Temperature Graph"></td>
-                            </td>
-                            <td>
-
-                              <div class="card-body">
+                          <td>
+                            <div class="card-body">
                                 <div class ="row">
                                   <div class="col-sm-12">
                                     <table>
@@ -77,13 +72,13 @@
                                   <div class="col-sm-6">
                                     <a href="Visualize-temp.html">
                     
-                                      <img src="Resources/assets/images/Fig1.png" height = 200px width = 200px alt='Temprature'>
+                                      <img src="Resources/assets/images/Fig1.png" height = 400px width = 400px alt='Temprature'>
                                     </a>
                                   </div>
                                   <div class="col-sm-6">
                                     <a href="Visualize-humidity.html">
 
-                                        <img src="Resources/assets/images/Fig2.png" height = 200px width = 200x alt='Humidity'>
+                                        <img src="Resources/assets/images/Fig2.png" height = 400px width = 400x alt='Humidity'>
                                     </a>
                                   </div>
                                 </div>
@@ -91,47 +86,31 @@
                                   <div class="col-sm-6">
                                     <a href="Visualize-cloud.html">
                     
-                                        <img src="Resources/assets/images/Fig3.png" height = 200px width = 200px alt='Cloudiness'>
+                                        <img src="Resources/assets/images/Fig3.png" height = 400px width = 400px alt='Cloudiness'>
                                     </a>
                                   </div>
                                   <div class="col-sm-6">
                                     <a href="Visualize-ws.html">
                                       
-                                        <img src="Resources/assets/images/Fig4.png" height = 200px width = 200px alt='Wind Speed'>
+                                        <img src="Resources/assets/images/Fig4.png" height = 400px width = 400px alt='Wind Speed'>
                                     </a>
                                     <br><br>
                                   </div>
                                 </div>
-
-                            </td>
-                            </tr>
-                          </table>
-                        </tr>
+                          </td>
+                          </tr>
                     </table>
-                    <br><br>
-                    <p>The purpose of this project was to analyze how weather across 500+ cities across the world changes as you get closer to the equator. To accomplish this analysis, OpenWeatherMap API was utilized to assemble the dataset to create a representative model of weather across world cities.</p>
-                        <br>
-                    <p> Matplotlib was used to build a series of plots to showcase the relationships regarding several variables
-                        of weather vs. latitude. Relationships analyzed included: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude,
-                        Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude.</p>
-                         <br>
-                    <p> Data and visualizations are are provided as part of the analysis, including explanations and descriptions
-                        of trends and correlations.</p>
+                </div>
             </div>
-         </div>
-    </div>
-    <div class="col-md-5">
-        <div class="card">
-          
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-    
 </body>
 </html>
+
+
+                          
